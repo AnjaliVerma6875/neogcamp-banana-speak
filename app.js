@@ -4,7 +4,8 @@ var outputDiv = document.querySelector("#output");
 
 
 //DEMO var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
-var serverURL = "https://api.funtranslations.com/translate/minion.json"
+var serverURL = "http://api.funtranslations.com/translate/morse2english.json";
+//var serverURL = "https://api.funtranslations.com/translate/minion.json"
 //var serverURL = "https://api.funtranslations.com/translate/groot.json"
 
 function getTranslationURL(text){
@@ -36,16 +37,3 @@ fetch(getTranslationURL(inputText)).then(response => response.json()).then(json 
 
 //console.log(json.contents.translated)).catch(errorHandler)
 });
-
-
-//1. document.querySelectorAll("textarea")
-//2. .btn-primary
-//3. #input-btn
-//4. "input(name='translator')"
-
-//we don't have to pass any parameter in function errorHandler..
-//function catch(callbackfn===errorHandler){
-    //Do Something..
-    //Something More..
-    //callbackfn(error);
-//}
